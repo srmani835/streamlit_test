@@ -24,7 +24,7 @@ def progress_bar(timesleep):
 
 	
 def Prediction(df):
-  length=titanic_df.shape
+  length=df.shape
   pred_list=[]
   for i in range(length[0]):
     c_r=random.randint(0,1)
