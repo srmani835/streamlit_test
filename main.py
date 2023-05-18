@@ -7,7 +7,7 @@ import time
 
 
 def readcsv(csv):
-    df = pd.read_csv(csv)
+    df = pd.read_csv(csv,encoding= 'unicode_escape')
     return df
 
 def convert_df(df):
