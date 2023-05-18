@@ -21,23 +21,22 @@ def progress_bar(timesleep):
     for percent_complete in range(100):
         time.sleep(timesleep)
         my_bar.progress(percent_complete + 1)
-		
-def Prediction(df):
-    length=titanic_df.shape
-	pred_list=[]
-    for i in range(length[0]):
-	    c_r=random.randint(0,1)
-		pred_list.append(c_r)
-	pred_df=pd.DataFrame(pred_list)
+
 	
-	return pred_df
-	     
-	   
+def Prediction(df):
+  length=titanic_df.shape
+  pred_list=[]
+  for i in range(length[0]):
+    c_r=random.randint(0,1)
+    pred_list.append(c_r)
+  pred_df=pd.DataFrame(pred_list)
+  return pred_df
+
 
 def main():
 
     st.title('   Money Laundering Detection   ')
-    st.image('image.jpg',width=None, use_column_width='always')
+    st.image('Machine_learning_repo.png',width=None, use_column_width='always')
     st.markdown('Application to detect the irregularities in day to day transactions')
     file = st.file_uploader('Upload your csv file', type='csv')
 
