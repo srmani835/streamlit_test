@@ -50,7 +50,7 @@ def main():
         
         final_data = combine_df(initial_df, predictor)
 
-        target_file = convert_df(predictor)
+        target_file = convert_df(final_data)
 
         st.caption('Generating the Prediction File, Please wait')
         progress_bar(0.01)
