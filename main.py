@@ -28,7 +28,7 @@ def Prediction(df):
   length=df.shape
   pred_list=[]
   for i in range(length[0]):
-    c_r=random.randint(0,1)
+    c_r=length[0]
     pred_list.append(c_r)
   pred_df=pd.DataFrame(pred_list)
   return pred_df
