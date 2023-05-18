@@ -36,7 +36,7 @@ def Prediction(df):
 def main():
 
     st.title('   Money Laundering Detection   ')
-    st.image('Machine_learning_repo.png',width=None, use_column_width='always')
+    
     st.markdown('Application to detect the irregularities in day to day transactions')
     file = st.file_uploader('Upload your csv file', type='csv')
 
