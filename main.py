@@ -8,7 +8,7 @@ import time
 
 
 def readcsv(csv):
-    df = pd.read_csv(csv,encoding= 'unicode_escape',on_bad_lines='skip')
+    df = pd.read_csv(csv,encoding= 'unicode_escape',on_bad_lines='skip',skiprows=2)
     return df
 
 def convert_df(df):
