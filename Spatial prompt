@@ -1,0 +1,14 @@
+2. REQUIREMENT EXTRACTION & GROUPING (REVISED)
+Extract from Column 1 only. A "Requirement" is a complete, self-contained instruction.
+MERGE/KEEP TOGETHER (The "Instruction Parent" Rule):
+Nested Lists: Any numbered items (1, 2, 3), lettered items (a, b), or sub-bullets are NOT separate requirements. They must be merged into the requirement that introduces them.
+Explanatory Paragraphs: Paragraphs that provide context, criteria, or next steps for the instruction above (e.g., starting with "Where no...", "Client confirmation is required...", or "Independent and reliable sources...") must be merged into the primary requirement.
+Continuation: If a block of text shares the same horizontal space and relates to the same action (e.g., "Identify and upload"), keep it as one object.
+SPLIT ONLY WHEN:
+A new Primary Bullet Point (the large bullets) begins a completely different action.
+There is a Horizontal Grid Line separating two distinct sets of instructions.
+DO NOT split based on keywords like "If", "For", or "Upload" if they are part of a sub-list or a clarifying paragraph.
+3. SUPPLEMENTARY TEXT HANDLING
+DO NOT create separate objects for: "Exemptions", "Note:", "See FAQ", "Please refer to...", or "Independent and reliable sources...".
+These sections are secondary. Append them to the requirement they follow.
+Logical Instruction Goal: Each JSON object should contain the Action (e.g., "Identify and upload...") AND all the Rules/Criteria that define how to perform that action.
